@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO_DO_APP</title>
+    <style>
+        *{
+            color: aliceblue;
+            padding: 0;
+            margin: 0;
+        }
+         body {
+            padding: 0;
+            background-color: hsl(0, 0%, 0%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+          
+            height: 90%;
+            width: 55%;
+            /* border: solid 3px; */
+        }
+        .input{
+            height: 40px;
+            width: 70%;
+            border: none;
+            border-radius: 10px;
+            color: black;
+        }
+        .input:focus{
+            border: none;
+        }
+        .add , span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: hsl(0, 100%, 50%);
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            height: 40px;
+            font-size: 15px;
+        }
+        span{
+            padding: 3px 20px;
+        }
+        .form{
+            padding-bottom: 4px;
+            gap: 10px;
+           border-radius: 8px;
+            height: 60px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.861);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tasks{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+           flex-direction: column;
+           align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.861);
+           
+            width: 100%;
+        }
+        .task{
+            cursor: pointer;
+            height: 40px;
+            width: 80%;
+            margin-bottom: 10px;
+            background-color: wheat;
+            font-size: 20px;
+           padding: 10px;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .done{
+            color: rgb(173, 173, 173);
+            background-color: gray;
+        }
+        /* .done~span{
+            color: lightslategray;
+        } */
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="form">
+            <input type="text" class="input" >
+            <input type="submit" class="add" value="ADD TASK" >
+        </div>
+        <div class="tasks">
+            <div class="taskone"></div>
+            <div class="taskone"></div>
+            <div class="taskone"></div>
+
+        </div>
+    </div>
+
+
+    <script src="TO_DO_APP.js"></script>
+</body>
+</html>
