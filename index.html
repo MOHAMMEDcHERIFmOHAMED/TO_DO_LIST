@@ -91,9 +91,12 @@ span {
     color: rgb(173, 173, 173);
     background-color: gray;
 }
-
+.del{
+    padding: 5px 12px;
+}
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) { /* Large Devices */
+
+@media (max-width: 1024px) { 
     .container {
         width: 70%;
     }
@@ -110,7 +113,7 @@ span {
     }
 }
 
-@media (max-width: 768px) { /* Medium Devices */
+@media (max-width: 768px) { 
     .container {
         width: 80%;
     }
@@ -127,7 +130,7 @@ span {
     }
 }
 
-@media (max-width: 480px) { /* Small Devices */
+@media (max-width: 480px) { 
     .container {
         width: 91%;
     }
@@ -153,13 +156,13 @@ span {
     }
 }
 
-@media (max-width: 360px) { /* Extra Small Devices */
+@media  (min-width:320px) and (max-width: 460px) { 
     .container {
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
     .input {
-        width: 50%;
+        width: 94%;
         font-size: 14px;
     }
     .add, span {
@@ -168,7 +171,7 @@ span {
         height: 35px;
     }
     .task {
-        width: 100%;
+        width: 90%;
         font-size: 14px;
     }
     .form {
